@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Xml;
-using System.Data.Sql;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,13 +7,18 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication1
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class WebForm2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
             DataSet1TableAdapters.TBL_OGRENCITableAdapter dt = new DataSet1TableAdapters.TBL_OGRENCITableAdapter();
-            Repeater1.DataSource = dt.OgrenciListesi();
-            Repeater1.DataBind();
+            dt.OgrenciEkle(TxtOgrAd.Text, TxtOgrSoyAd.Text, TxtOgrTelefon.Text, TxtOgrMail.Text, TxtOgrSifre.Text, TxtOgrFoto.Text);
+            Response.Redirect("WebForm1.aspx");
         }
     }
 }

@@ -35,9 +35,9 @@
                             Öğrenci Listesi
                         </a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="#">Öğrenci Ekle</a></li>
-                            <li><a href="#">Öğrenci Bul</a></li>
-                            <li><a href="#">Öğrenci Seç</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-plus"></i>Öğrenci Ekle</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-search"></i>Öğrenci Bul</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-minus"></i>Öğrenci Sil</a></li>
                         </ul>
                     </li>
                     <li>

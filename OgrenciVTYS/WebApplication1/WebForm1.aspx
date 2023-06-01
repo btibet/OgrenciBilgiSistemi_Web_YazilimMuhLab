@@ -17,30 +17,24 @@
         </tr>
 
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Marsk</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
+            
+            <asp:Repeater ID="Repeater1" runat="server">
+
+                <ItemTemplate>
+
+                    <tr>
+                        <td><%#Eval("OGRID")%></td>
+                        <td><%#Eval("OGRAD")%></td>
+                        <td><%#Eval("OGRSOYAD")%></td>
+                        <td><%#Eval("OGRTELEFON")%></td>
+                        <td><%#Eval("OGRMAIL")%></td>
+                        <td><%#Eval("OGRSIFRE")%></td>
+                    </tr>
+
+                </ItemTemplate>
+
+            </asp:Repeater>
+
         </tbody>
     </table>
 
@@ -48,3 +42,4 @@
 
 
 </asp:Content>
+<%--<th scope="row">1</th>--%>
