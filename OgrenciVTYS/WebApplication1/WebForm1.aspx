@@ -40,10 +40,12 @@
 
             </asp:Repeater>
 
+            
+
         </tbody>
     </table>
 
-
+    <asp:HyperLink ID="HyperLink3" runat="server" CssClass="btn btn-info">Ders Ekle</asp:HyperLink>
 
 
 </asp:Content>

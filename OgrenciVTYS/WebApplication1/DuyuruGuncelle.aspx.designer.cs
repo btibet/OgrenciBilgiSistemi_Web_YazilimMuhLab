@@ -11,7 +11,7 @@ namespace WebApplication1
 {
 
 
-    public partial class DuyuruEkle
+    public partial class DuyuruGuncelle
     {
 
         /// <summary>
@@ -24,13 +24,13 @@ namespace WebApplication1
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// DropDownList1 denetimi.
+        /// TxtDuyuruID denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.TextBox TxtDuyuruID;
 
         /// <summary>
         /// TxtDuyuruBaslik denetimi.

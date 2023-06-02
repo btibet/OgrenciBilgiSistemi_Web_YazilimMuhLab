@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Ogretmen.Master" AutoEventWireup="true" CodeBehind="DuyuruEkle.aspx.cs" Inherits="WebApplication1.DuyuruEkle" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Ogretmen.Master" AutoEventWireup="true" CodeBehind="DuyuruGuncelle.aspx.cs" Inherits="WebApplication1.DuyuruGuncelle" %>
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
@@ -7,8 +8,8 @@
     <form id="form1" runat="server">
         <div class="form-group">
             <div>
-                <asp:Label for="TxtDuyuruOgretmen" runat="server">Duyuru Öğretmen</asp:Label>
-                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control"></asp:DropDownList>
+                <asp:Label for="TxtDuyuruID" runat="server">Duyuru ID</asp:Label>
+                <asp:TextBox ID="TxtDuyuruID" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
             <br />
             <div>
@@ -22,8 +23,8 @@
             </div>
         </div>
 
-        <asp:Button ID="Button1" runat="server" Text="Oluştur" CssClass="btn-info" OnClick="Button1_Click"  />
+        <asp:Button ID="Button1" runat="server" Text="Güncelle" CssClass="btn btn-primary" OnClick="Button1_Click" />
 
     </form>
-</asp:Content>
 
+</asp:Content>

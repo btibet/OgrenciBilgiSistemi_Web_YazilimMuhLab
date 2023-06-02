@@ -29,8 +29,8 @@
                         <td><%#Eval("DUYURANOGRT")%></td>
 
                         <td>
-                            <asp:HyperLink ID="HyperLink1"  runat="server" CssClass="btn btn-danger">SİL</asp:HyperLink>
-                            <asp:HyperLink ID="HyperLink2"  runat="server" CssClass="btn btn-success">GÜNCELLE</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl='<%#"DuyuruSil.aspx?DuyuruID="+Eval("DuyuruID") %>'      ID="HyperLink1"  runat="server" CssClass="btn btn-danger">SİL</asp:HyperLink>
+                            <asp:HyperLink NavigateUrl='<%#"DuyuruGuncelle.aspx?DuyuruID="+Eval("DuyuruID") %>'      ID="HyperLink2"  runat="server" CssClass="btn btn-success">GÜNCELLE</asp:HyperLink>
                         </td>
                     </tr>
 
