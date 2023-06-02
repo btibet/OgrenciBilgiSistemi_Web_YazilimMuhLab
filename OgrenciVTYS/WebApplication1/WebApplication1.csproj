@@ -334,6 +334,8 @@
     <Content Include="Dosyalar1\sidebar\style4.css" />
     <Content Include="Dosyalar1\sidebar\style5.css" />
     <Content Include="Dosyalar1\StyleSheet2.css" />
+    <Content Include="DuyuruEkle.aspx" />
+    <Content Include="DuyuruListesi.aspx" />
     <Content Include="OgrenciGuncelle.aspx" />
     <Content Include="OgrenciSil.aspx" />
     <Content Include="Web.config" />
@@ -345,6 +347,20 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruEkle.aspx.cs">
+      <DependentUpon>DuyuruEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruEkle.aspx.designer.cs">
+      <DependentUpon>DuyuruEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruListesi.aspx.cs">
+      <DependentUpon>DuyuruListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruListesi.aspx.designer.cs">
+      <DependentUpon>DuyuruListesi.aspx</DependentUpon>
     </Compile>
     <Compile Include="OgrenciGuncelle.aspx.cs">
       <DependentUpon>OgrenciGuncelle.aspx</DependentUpon>
