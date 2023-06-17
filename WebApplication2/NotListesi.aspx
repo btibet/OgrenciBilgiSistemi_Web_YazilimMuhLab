@@ -6,7 +6,6 @@
     <table class="table table-bordered table-hover">
 
         <tr>
-
             <th scope="col">ÖĞRENCİ ID</th>
             <th scope="col">AD SOYAD</th>
             <th scope="col">DERS ADI</th>
@@ -22,18 +21,18 @@
             <asp:Repeater ID="Repeater1" runat="server">
                 <ItemTemplate>
                     <tr>
-                        <td><%#Eval("OGRENCIID")%></td>
-                        <td><%#Eval("OGRENCIADSOYAD")%></td>
-                        <td><%#Eval("DERSAD")%></td>
-                        <td><%#Eval("SINAV1")%></td>
-                        <td><%#Eval("SINAV2")%></td>
-                        <td><%#Eval("SINAV3")%></td>
-                        <td><%#Eval("ORTALAMA")%></td>
-                        <td><%#Eval("DURUM")%></td>
-
+                        <td><%#Eval("OGRENCIID")%></td> <!-- Öğrenci ID'si -->
+                        <td><%#Eval("OGRENCIADSOYAD")%></td> <!-- Öğrenci adı soyadı -->
+                        <td><%#Eval("DERSAD")%></td> <!-- Ders adı -->
+                        <td><%#Eval("SINAV1")%></td> <!-- Sınav 1 notu -->
+                        <td><%#Eval("SINAV2")%></td> <!-- Sınav 2 notu -->
+                        <td><%#Eval("SINAV3")%></td> <!-- Sınav 3 notu -->
+                        <td><%#Eval("ORTALAMA")%></td> <!-- Notların ortalaması -->
+                        <td><%#Eval("DURUM")%></td> <!-- Durum (Geçti, Kaldı) -->
+                        
                         <td>
                             <asp:HyperLink NavigateUrl='<%#"NotGuncelle.aspx?NOTID="+Eval( "NOTID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-success">GÜNCELLE</asp:HyperLink>
-                        </td>
+                        </td> <!-- Güncelleme linki -->
                     </tr>
                 </ItemTemplate>
             </asp:Repeater>

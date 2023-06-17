@@ -17,8 +17,6 @@
 </head>
 <body>
 
-
-
     <div class="wrapper" style="">
         <!-- Sidebar Holder -->
         <nav id="sidebar">
@@ -28,6 +26,7 @@
             </div>
 
             <ul class="list-unstyled components">
+                <!-- Öğrenci İşlemleri -->
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-edit"></i>
@@ -35,14 +34,15 @@
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li><a href="Anasayfa.aspx"><i class="glyphicon glyphicon-list"></i>Öğrenci Listesi</a></li>
-
                     </ul>
                 </li>
+                <!-- Dersler -->
                 <li>
                     <a href="DersListesi.aspx">
                         <i class="glyphicon glyphicon-book"></i>
                         Dersler
                     </a>
+                    <!-- Mesajlar -->
                     <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-calendar"></i>
                         Mesajlar
@@ -53,6 +53,7 @@
                         <li><a href="MesajOlustur.aspx"><i class="glyphicon glyphicon-pencil"></i>Mesaj Oluştur</a></li>
                     </ul>
                 </li>
+                <!-- Duyurular -->
                 <li class="active">
                     <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-bell"></i>
@@ -63,6 +64,7 @@
                         <li><a href="DuyuruEkle.aspx"><i class="glyphicon glyphicon-plus"></i>Duyuru Ekle</a></li>
                     </ul>
                 </li>
+                <!-- Not İşlemleri -->
                 <li class="active">
                     <a href="#homeSubmenunot" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-paperclip"></i>
@@ -73,6 +75,7 @@
                         <li><a href="NotEkle.aspx"><i class="glyphicon glyphicon-plus"></i>Not Ekle</a></li>
                     </ul>
                 </li>
+                <!-- Çıkış Yap -->
                 <li>
                     <a href="Login.aspx">
                         <i class="glyphicon glyphicon-export"></i>
@@ -80,22 +83,13 @@
                     </a>
                 </li>
             </ul>
-
-
         </nav>
 
         <!-- Page Content Holder -->
         <div id="content">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
-
-
-
         </div>
     </div>
-
-
-
-
 
     <!-- jQuery CDN -->
     <script src="Dosyalar1/jquery-1.12.0.min.js"></script>
@@ -104,6 +98,7 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
+            // Kenar çubuğunun açılıp kapanmasını sağlayan fonksiyon
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
             });

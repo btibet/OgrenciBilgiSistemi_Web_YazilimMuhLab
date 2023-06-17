@@ -1,43 +1,48 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Ogrenci.master.cs" Inherits="WebApplication2.Ogrenci" %>
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <!-- HTML sayfasının başlık alanı -->
     <title>Öğrenci Bilgi Sistemi</title>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
-
     <!-- Bootstrap CSS CDN -->
+    <!-- Dosyalar1 klasörü altındaki bootstrap.min.css dosyasının yolunu belirtir. -->
     <link href="Dosyalar1/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Our Custom CSS -->
+    <!-- Dosyalar1 klasörü altındaki StyleSheet1.css dosyasının yolunu belirtir -->
     <link href="Dosyalar1/StyleSheet1.css" rel="stylesheet" />
 </head>
 <body>
     <div class="wrapper" style="">
         <!-- Sidebar Holder -->
+        <!-- Navigasyon çubuğunu içeren bir bölüm -->
         <nav id="sidebar">
             <div class="sidebar-header">
+                <!-- Navigasyon çubuğunun başlık alanı -->
                 <h3>Öğrenci Paneli</h3>
                 <strong>BS</strong>
             </div>
             <ul class="list-unstyled components">
                 <li>
                     <a href="OgrenciDefault.aspx">
+                        <!-- Ev simgesi ile "Profilim" bağlantısı -->
                         <i class="glyphicon glyphicon-home"></i>
                         Profilim
                     </a>
                     <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false">
+                        <!-- Takvim simgesi ile "Mesajlar" bağlantısı -->
                         <i class="glyphicon glyphicon-calendar"></i>
                         Mesajlar
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu3">
                         <li><a href="OgrenciGelen.aspx"><i class="glyphicon glyphicon-download"></i>Gelen Mesajlar</a></li>
                         <li><a href="OgrenciGiden.aspx"><i class="glyphicon glyphicon-upload"></i>Giden Mesajlar</a></li>
-
+                        
                         <a href="#homeSubmenu4" data-toggle="collapse" aria-expanded="false">
+                            <!-- Takvim simgesi ile "Mesaj Yaz" bağlantısı -->
                             <i class="glyphicon glyphicon-calendar"></i>
                             Mesaj Yaz
                         </a>
@@ -45,24 +50,25 @@
                             <li><a href="OgrencidenOgretmene.aspx"><i class="glyphicon glyphicon-pencil"></i>Öğretmenin Mesaj Yaz...</a></li>
                             <li><a href="OgrenciMesajOlustur.aspx"><i class="glyphicon glyphicon-star"></i>Arkadaşına Mesaj Yaz...</a></li>
                         </ul>
-
                     </ul>
-
                 </li>
                 <li>
                     <a href="OgrenciDuyuru.aspx">
+                        <!-- Zil simgesi ile "Duyurular" bağlantısı -->
                         <i class="glyphicon glyphicon-bell"></i>
                         Duyurular
                     </a>
                 </li>
                 <li>
                     <a href="OgrenciNotu.aspx">
+                        <!-- Liste simgesi ile "Sınav Notları" bağlantısı -->
                         <i class="glyphicon glyphicon-list"></i>
                         Sınav Notları
                     </a>
                 </li>
                 <li>
                     <a href="Login.aspx">
+                        <!-- Çıkış simgesi ile "Çıkış Yap" bağlantısı -->
                         <i class="glyphicon glyphicon-export"></i>
                         Çıkış Yap
                     </a>
@@ -70,18 +76,21 @@
             </ul>
         </nav>
         <!-- Page Content Holder -->
+        <!-- Geri kalan sayfa içeriği -->
         <div id="content">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
         </div>
     </div>
     <!-- jQuery CDN -->
+    <!-- Dosyalar1 klasörü altındaki jquery-1.12.0.min.js dosyasını dahil eder -->
     <script src="Dosyalar1/jquery-1.12.0.min.js"></script>
     <!-- Bootstrap Js CDN -->
+    <!-- Dosyalar1 klasörü altındaki js-bootstrap.min.js dosyasını dahil eder-->
     <script src="Dosyalar1/js-bootstrap.min.js"></script>
-
     <script type="text/javascript">
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
+                // Kenar çubuğunu gizle/göster
                 $('#sidebar').toggleClass('active');
             });
         });

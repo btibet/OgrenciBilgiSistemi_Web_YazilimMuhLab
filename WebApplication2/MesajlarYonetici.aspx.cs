@@ -11,8 +11,13 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // Veritabanı tablo adaptörü oluşturuluyor
             DataSet1TableAdapters.TBL_MESAJLARTableAdapter dt = new DataSet1TableAdapters.TBL_MESAJLARTableAdapter();
+
+            // Repeater veri kaynağı olarak mesajları alıyor
             Repeater1.DataSource = dt.MesajlariGetir();
+
+            // Veriler tekrarlayıcıya bağlanıyor
             Repeater1.DataBind();
         }
     }

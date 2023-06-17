@@ -11,30 +11,37 @@
     <form id="form1" runat="server">
 
         <div style="width: 370px; margin: auto">
+            <!-- Başlık -->
             <div style="margin: auto; text-align: center; margin-top:150px;">
                 <h4>ÖĞRENCİ BİLGİ SİSTEMİ</h4>
             </div>
             <br />
 
+            <!-- Logo -->
             <div style="margin: auto; text-align: center;">
                 <asp:Image ID="Image1" runat="server" Height="100px" Width="100px" ImageUrl="~/unnamed.png" />
             </div>
 
             <br />
+            <!-- Kullanıcı Adı -->
             <div>
                 <asp:Label for="TxtNumara" runat="server">KULLANICI ADI </asp:Label>
                 <asp:TextBox ID="TxtNumara" runat="server" CssClass="form-control" Width="350px"></asp:TextBox>
             </div>
             <br />
+            <!-- Şifre -->
             <div>
                 <asp:Label for="TxtSifre" runat="server">ŞİFRE </asp:Label>
                 <asp:TextBox ID="TxtSifre" runat="server" CssClass="form-control" Width="350px" TextMode="Password"></asp:TextBox>
             </div>
             <br />
+            <!-- Giriş Yap Butonu -->
             <asp:Button ID="Button1" runat="server" Text="GİRİŞ YAP" CssClass="btn btn-warning" Width="350px" OnClick="Button1_Click" />
             <br />
             <br />
+            <!-- Yönetici Girişi Butonu -->
             <asp:Button ID="Button2" runat="server" Text="YÖNETİCİ GİRİŞİ" CssClass="btn btn-default  " Width="170px"  OnClick="Button2_Click"/>
+            <!-- Öğretmen Girişi Butonu -->
             <asp:Button ID="Button3" runat="server" Text="ÖĞRETMEN GİRİŞİ" CssClass="btn btn-info  " Width="170px" OnClick="Button3_Click" />
         </div>
 

@@ -4,30 +4,33 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <form id="Form1" runat="server">
         <div class="form-group">
-            
             <br>
-           <div>
+            <div>
+                <%-- Öğrenci Numarası --%>
                 <asp:Label for="TxtOgrid" runat="server">ÖĞRENCİ NUMARASI</asp:Label>
                 <asp:TextBox ID="TxtOgrid" runat="server" CssClass="form-control" Width="200px"></asp:TextBox>
             </div>
             <div>
+                <%-- Ders --%>
                 <asp:Label for="DropDownList1" runat="server">DERS</asp:Label>
                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control" Width="200px"></asp:DropDownList>
             </div>
             <div>
+                <%-- Sınav 1 --%>
                 <asp:Label for="TxtSınav1" runat="server">SINAV 1</asp:Label>
                 <asp:TextBox ID="TxtSınav1" runat="server" CssClass="form-control" Width="200px"></asp:TextBox>
             </div>
             <div>
+                <%-- Sınav 2 --%>
                 <asp:Label for="TxtSınav2" runat="server">SINAV 2</asp:Label>
                 <asp:TextBox ID="TxtSınav2" runat="server" CssClass="form-control" Width="200px"></asp:TextBox>
             </div>
-             <div>
+            <div>
+                <%-- Sınav 3 --%>
                 <asp:Label for="TxtSınav3" runat="server">SINAV 3</asp:Label>
                 <asp:TextBox ID="TxtSınav3" runat="server" CssClass="form-control" Width="200px"></asp:TextBox>
             </div>
-           
         </div>
-        <asp:Button ID="Button1" runat="server"  Text="Kaydet" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" Text="Kaydet" OnClick="Button1_Click" />
     </form>
 </asp:Content>

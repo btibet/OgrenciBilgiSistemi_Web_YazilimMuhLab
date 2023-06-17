@@ -11,8 +11,13 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // TBL_OGRETMENTableAdapter sınıfından bir instance oluşturuluyor
             DataSet1TableAdapters.TBL_OGRETMENTableAdapter dt = new DataSet1TableAdapters.TBL_OGRETMENTableAdapter();
+
+            // Repeater kontrolünün veri kaynağına TBL_OGRETMENTableAdapter üzerinden öğretmen listesini atıyoruz
             Repeater1.DataSource = dt.OgretmenListesi();
+
+            // Veri bağlama işlemini gerçekleştiriyoruz
             Repeater1.DataBind();
         }
     }

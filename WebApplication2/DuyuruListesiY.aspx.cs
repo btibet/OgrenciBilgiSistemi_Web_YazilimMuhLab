@@ -11,8 +11,14 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // DataSet1TableAdapters.TBL_DUYURULARTableAdapter nesnesi oluşturulur
+            // Bu nesne, TBL_DUYURULAR tablosuna erişim sağlar
             DataSet1TableAdapters.TBL_DUYURULARTableAdapter dt = new DataSet1TableAdapters.TBL_DUYURULARTableAdapter();
+
+            // Repeater1 kontrolünün veri kaynağı olarak TBL_DUYURULAR tablosundan gelen veriler atanır
             Repeater1.DataSource = dt.DuyuruListesi();
+
+            // Repeater1 kontrolü verileri bağlar ve görüntüler
             Repeater1.DataBind();
         }
     }

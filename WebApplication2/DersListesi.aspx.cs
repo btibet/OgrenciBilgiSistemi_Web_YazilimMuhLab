@@ -11,8 +11,13 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // DataSet1TableAdapters.TBL_DERSLERTableAdapter sınıfından bir örnek oluşturuluyor
             DataSet1TableAdapters.TBL_DERSLERTableAdapter dt = new DataSet1TableAdapters.TBL_DERSLERTableAdapter();
+
+            // DersListesi() metodu kullanılarak derslerin veritabanından alınması sağlanıyor
             Repeater1.DataSource = dt.DersListesi();
+
+            // Derslerin tekrarlayıcı (Repeater) kontrolüne bağlanması ve verilerin görüntülenmesi sağlanıyor
             Repeater1.DataBind();
         }
     }

@@ -17,17 +17,19 @@
 </head>
 <body>
 
-
-
+    <!-- Wrapper -->
     <div class="wrapper" style="">
         <!-- Sidebar Holder -->
         <nav id="sidebar">
+            <!-- Sidebar Header -->
             <div class="sidebar-header">
                 <h3>Yönetici Paneli</h3>
                 <strong>BS</strong>
             </div>
 
+            <!-- Sidebar Menu -->
             <ul class="list-unstyled components">
+                <!-- Öğrenci İşlemleri -->
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-edit"></i>
@@ -36,9 +38,10 @@
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li><a href="YoneticiDefault.aspx"><i class="glyphicon glyphicon-list"></i>Öğrenci Listesi</a></li>
                         <li><a href="OgrenciEkleY.aspx"><i class="glyphicon glyphicon-plus"></i>Öğrenci Ekle</a></li>
-
                     </ul>
                 </li>
+
+                <!-- Öğretmen İşlemleri -->
                 <li class="active">
                     <a href="#homeSubmenu99" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-edit"></i>
@@ -47,9 +50,10 @@
                     <ul class="collapse list-unstyled" id="homeSubmenu99">
                         <li><a href="OgretmenListesi.aspx"><i class="glyphicon glyphicon-list"></i>Öğretmen Listesi</a></li>
                         <li><a href="OgretmenEkle.aspx"><i class="glyphicon glyphicon-plus"></i>Öğretmen Ekle</a></li>
-
                     </ul>
                 </li>
+
+                <!-- Dersler -->
                 <li>
                     <a href="DersListesiY.aspx">
                         <i class="glyphicon glyphicon-book"></i>
@@ -64,6 +68,8 @@
                         <li><a href="MesajOlusturY.aspx"><i class="glyphicon glyphicon-pencil"></i>Mesaj Oluştur</a></li>
                     </ul>
                 </li>
+
+                <!-- Duyurular -->
                 <li class="active">
                     <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-bell"></i>
@@ -74,6 +80,8 @@
                         <li><a href="DuyuruEkleY.aspx"><i class="glyphicon glyphicon-plus"></i>Duyuru Ekle</a></li>
                     </ul>
                 </li>
+
+                <!-- Not İşlemleri -->
                 <li class="active">
                     <a href="#homeSubmenunot" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-paperclip"></i>
@@ -84,6 +92,8 @@
                         <li><a href="NotEkleY.aspx"><i class="glyphicon glyphicon-plus"></i>Not Ekle</a></li>
                     </ul>
                 </li>
+
+                <!-- Çıkış Yap -->
                 <li>
                     <a href="Login.aspx">
                         <i class="glyphicon glyphicon-export"></i>
@@ -91,22 +101,13 @@
                     </a>
                 </li>
             </ul>
-
-
         </nav>
 
         <!-- Page Content Holder -->
         <div id="content">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
-
-
-
         </div>
     </div>
-
-
-
-
 
     <!-- jQuery CDN -->
     <script src="Dosyalar1/jquery-1.12.0.min.js"></script>

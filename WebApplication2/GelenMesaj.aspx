@@ -5,30 +5,25 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <table class="table table-bordered table-hover">
 
+          <%-- Tablo Başlıkları --%>
         <tr>
             <th scope="col">ID</th>
             <th scope="col">GÖNDEREN</th>
             <th scope="col">BAŞLIK</th>
             <th scope="col">İÇERİK</th>
             <th scope="col">TARİH</th>
-       
-
         </tr>
 
         <tbody>
+            <%-- Veritabanından gelen mesajları listeleyen repeater kontrolleri --%>
             <asp:Repeater ID="Repeater1" runat="server">
                 <ItemTemplate>
                     <tr>
-                        <td><%#Eval("MESAJID")%></td>
-                        <td><%#Eval("GONDEREN")%></td>
-                        <td><%#Eval("BASLIK")%></td>
-                        <td><%#Eval("ICERIK")%></td>
-                        <td><%#Eval("TARIH")%></td>
-
-                        <%--     <td>
-                            <asp:HyperLink NavigateUrl='<%# "M.aspx?DuyuruID="+ Eval("DUYURUID")%>' ID="HyperLink1"   runat="server" CssClass="btn btn-danger">SİL</asp:HyperLink>
-                            <asp:HyperLink NavigateUrl='<%# "DuyuruGuncelle.aspx?DuyuruID="+ Eval("DUYURUID")%>' ID="HyperLink2" runat="server" CssClass="btn btn-success">GÜNCELLE</asp:HyperLink>
-                        </td>--%>
+                        <td><%#Eval("MESAJID")%></td>  <%-- MESAJID alanını gösterir --%>
+                        <td><%#Eval("GONDEREN")%></td>  <%-- GONDEREN alanını gösterir --%>
+                        <td><%#Eval("BASLIK")%></td>  <%-- BASLIK alanını gösterir --%>
+                        <td><%#Eval("ICERIK")%></td>  <%-- ICERIK alanını gösterir --%>
+                        <td><%#Eval("TARIH")%></td>  <%-- TARIH alanını gösterir -->
                     </tr>
                 </ItemTemplate>
             </asp:Repeater>

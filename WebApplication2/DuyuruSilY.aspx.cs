@@ -11,9 +11,17 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // URL üzerinden gelen "DUYURUID" parametresi alınır ve integer türüne dönüştürülür
             int id = Convert.ToInt32(Request.QueryString["DUYURUID"].ToString());
+
+            // DataSet1TableAdapters.TBL_DUYURULARTableAdapter nesnesi oluşturulur
+            // Bu nesne, TBL_DUYURULAR tablosuna erişim sağlar
             DataSet1TableAdapters.TBL_DUYURULARTableAdapter dt = new DataSet1TableAdapters.TBL_DUYURULARTableAdapter();
+
+            // Belirtilen "DUYURUID" değerine sahip duyuruyu veritabanından siler
             dt.DuyuruSil(id);
+
+            // Kullanıcıyı "DuyuruListesiY.aspx" sayfasına yönlendirir
             Response.Redirect("DuyuruListesiY.aspx");
         }
     }

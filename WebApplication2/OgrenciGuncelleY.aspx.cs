@@ -16,9 +16,11 @@ namespace WebApplication2
             {
                 try
                 {
+                    // Öğrenci ID'sini sorgu parametresinden alarak sayfaya yükler
                     id = Convert.ToInt32(Request.QueryString["OGRID"].ToString());
                     TxtOgrid.Text = id.ToString();
                     DataSet1TableAdapters.TBL_OGRENCITableAdapter dt = new DataSet1TableAdapters.TBL_OGRENCITableAdapter();
+                    // Öğrenci bilgilerini veritabanından alarak ilgili metin kutularına doldurur
                     TxtOgrAd.Text = dt.OgrenciSec(id)[0].OGRAD;
                     TxtOgrSoyad.Text = dt.OgrenciSec(id)[0].OGRSOYAD;
                     TxtOgrTel.Text = dt.OgrenciSec(id)[0].OGRTEL;
@@ -28,7 +30,7 @@ namespace WebApplication2
                 }
                 catch (Exception)
                 {
-                   
+                    // Hata durumunda bir işlem yapma
                 }
             }
         }
@@ -36,7 +38,9 @@ namespace WebApplication2
         protected void Button1_Click(object sender, EventArgs e)
         {
             DataSet1TableAdapters.TBL_OGRENCITableAdapter dt = new DataSet1TableAdapters.TBL_OGRENCITableAdapter();
+            // Öğrenci bilgilerini günceller
             dt.OgrenciGuncelle(TxtOgrAd.Text, TxtOgrSoyad.Text, TxtOgrTel.Text, TxtOgrMail.Text, TxtOgrSifre.Text, Convert.ToInt32(TxtOgrid.Text));
+            // Anasayfaya yönlendirme yapar
             Response.Redirect("YoneticiDefault.aspx");
         }
     }

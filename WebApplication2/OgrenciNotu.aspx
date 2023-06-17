@@ -6,7 +6,7 @@
     <table class="table table-bordered table-hover">
 
         <tr>
-
+            <!-- Tablo başlık satırı -->
             <th scope="col">ÖĞRENCİ NUMARASI</th>
             <th scope="col">AD SOYAD</th>
             <th scope="col">DERS ADI</th>
@@ -21,6 +21,7 @@
             <asp:Repeater ID="Repeater1" runat="server">
                 <ItemTemplate>
                     <tr>
+                        <!-- Tablo veri satırları -->
                         <td><%#Eval("NUMARA")%></td>
                         <td><%#Eval("OGRENCIADSOYAD")%></td>
                         <td><%#Eval("DERSAD")%></td>

@@ -11,15 +11,20 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // Sayfa yüklendiğinde "TxtGonderen" metin kutusuna "0002" değerini atayalım
             TxtGonderen.Text = "0002";
         }
 
         protected void BtnGonder_Click(object sender, EventArgs e)
         {
+            // TBL_MESAJLARTableAdapter sınıfından bir örnek oluşturalım
             DataSet1TableAdapters.TBL_MESAJLARTableAdapter dt = new DataSet1TableAdapters.TBL_MESAJLARTableAdapter();
-            dt.MesajGonder(TxtGonderen.Text,TxtAlici.Text,TxtBaslik.Text,Txticerik.Text);
-            Response.Redirect("MesajlarYonetici.aspx");
 
+            // Mesajı göndermek için MesajGonder metodunu kullanalım
+            dt.MesajGonder(TxtGonderen.Text, TxtAlici.Text, TxtBaslik.Text, Txticerik.Text);
+
+            // Mesaj gönderildikten sonra "MesajlarYonetici.aspx" sayfasına yönlendirelim
+            Response.Redirect("MesajlarYonetici.aspx");
         }
     }
 }

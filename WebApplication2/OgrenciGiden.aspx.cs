@@ -11,8 +11,15 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // Veritabanı tablosu için TBL_MESAJLARTableAdapter örneği oluşturuluyor
             DataSet1TableAdapters.TBL_MESAJLARTableAdapter dt = new DataSet1TableAdapters.TBL_MESAJLARTableAdapter();
+
+            // Repeater1 kontrolüne veri kaynağı atanıyor
+            // OgrenciGiden metodu, öğrencinin gönderdiği mesajları veritabanından çekiyor
+            // Session["NUMARA"] değişkeni, oturumda tutulan öğrenci numarasını temsil ediyor
             Repeater1.DataSource = dt.OgrenciGiden(Session["NUMARA"].ToString());
+
+            // Veri bağlama işlemi gerçekleştiriliyor
             Repeater1.DataBind();
         }
     }

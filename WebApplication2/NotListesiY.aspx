@@ -6,7 +6,7 @@
     <table class="table table-bordered table-hover">
 
         <tr>
-
+            <!-- Tablo başlık satırı -->
             <th scope="col">ÖĞRENCİ ID</th>
             <th scope="col">AD SOYAD</th>
             <th scope="col">DERS ADI</th>
@@ -19,9 +19,11 @@
         </tr>
 
         <tbody>
+            <!-- Verilerin tekrarlanması için Repeater kullanılıyor -->
             <asp:Repeater ID="Repeater1" runat="server">
                 <ItemTemplate>
                     <tr>
+                        <!-- Veri tablosu hücreleri -->
                         <td><%#Eval("OGRENCIID")%></td>
                         <td><%#Eval("OGRENCIADSOYAD")%></td>
                         <td><%#Eval("DERSAD")%></td>
@@ -32,6 +34,7 @@
                         <td><%#Eval("DURUM")%></td>
 
                         <td>
+                            <!-- GÜNCELLE butonu -->
                             <asp:HyperLink NavigateUrl='<%#"NotGuncelleY.aspx?NOTID="+Eval( "NOTID") %>' ID="HyperLink2" runat="server" CssClass="btn btn-success">GÜNCELLE</asp:HyperLink>
                         </td>
                     </tr>

@@ -11,9 +11,16 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // QueryString üzerinden "DERSID" parametresi alınıyor ve bir bayt (byte) veri türüne dönüştürülüyor
             Byte id = Convert.ToByte(Request.QueryString["DERSID"].ToString());
+
+            // DataSet1 veri tabanı tablosu ile etkileşim sağlayan bir adapter oluşturuluyor
             DataSet1TableAdapters.TBL_DERSLERTableAdapter dt = new DataSet1TableAdapters.TBL_DERSLERTableAdapter();
+
+            // Belirtilen DERSID'ye sahip dersi silmek için adapterin DersSil() yöntemi çağrılıyor
             dt.DersSil(id);
+
+            // Silme işlemi tamamlandıktan sonra kullanıcıyı DersListesiY.aspx sayfasına yönlendiriyoruz
             Response.Redirect("DersListesiY.aspx");
         }
     }
