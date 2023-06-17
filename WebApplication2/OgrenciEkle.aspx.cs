@@ -17,7 +17,7 @@ namespace WebApplication2
         protected void Button1_Click1(object sender, EventArgs e)
         {
             DataSet1TableAdapters.TBL_OGRENCITableAdapter dt = new DataSet1TableAdapters.TBL_OGRENCITableAdapter();
-            dt.OgrenciEkle(TxtOgrAd.Text, TxtOgrSoyad.Text, TxtOgrTel.Text, TxtOgrMail.Text, TxtOgrSifre.Text);
+            dt.OgrenciEkle(TxtOgrNum.Text,TxtOgrAd.Text, TxtOgrSoyad.Text, TxtOgrTel.Text, TxtOgrMail.Text, TxtOgrSifre.Text);
             Response.Redirect("Anasayfa.aspx");
         }
     }

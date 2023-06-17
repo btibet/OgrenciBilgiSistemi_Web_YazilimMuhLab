@@ -111,6 +111,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="DersEkle.aspx" />
     <Content Include="DersGuncelle.aspx" />
+    <Content Include="DersListesiY.aspx" />
     <Content Include="DersListesi.aspx" />
     <Content Include="DersSil.aspx" />
     <Content Include="Dosyalar1\bootstrap-3.3.7\dist\css\bootstrap-theme.css" />
@@ -378,13 +379,19 @@
     <Content Include="Dosyalar1\sidebar\style4.css" />
     <Content Include="Dosyalar1\sidebar\style5.css" />
     <Content Include="Dosyalar1\sidebar\unnamed.png" />
+    <Content Include="Dosyalar1\StyleSheet3.css" />
     <Content Include="Dosyalar1\StyleSheet2.css" />
+    <Content Include="DuyuruEkleY.aspx" />
     <Content Include="DuyuruEkle.aspx" />
+    <Content Include="DuyuruGuncelleY.aspx" />
     <Content Include="DuyuruGuncelle.aspx" />
+    <Content Include="DuyuruListesiY.aspx" />
     <Content Include="DuyuruListesi.aspx" />
+    <Content Include="DuyuruSilY.aspx" />
     <Content Include="DuyuruSil.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="MesajlarYonetici.aspx" />
     <Content Include="GelenMesaj.aspx" />
     <Content Include="GidenMesajlar.aspx" />
     <Content Include="Global.asax" />
@@ -397,13 +404,23 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Login.aspx" />
+    <Content Include="MesajOlusturY.aspx" />
     <Content Include="MesajOlustur.aspx" />
+    <Content Include="NotEkleY.aspx" />
     <Content Include="NotEkle.aspx" />
+    <Content Include="NotGuncelleY.aspx" />
     <Content Include="NotGuncelle.aspx" />
+    <Content Include="NotListesiY.aspx" />
     <Content Include="NotListesi.aspx" />
     <Content Include="OgrenciDefault.aspx" />
     <Content Include="OgrencidenOgretmene.aspx" />
     <Content Include="OgrenciDuyuru.aspx" />
+    <Content Include="OgrenciGuncelleY.aspx" />
+    <Content Include="OgrenciSilY.aspx" />
+    <Content Include="OgretmenGuncelle.aspx" />
+    <Content Include="OgretmenSil.aspx" />
+    <Content Include="OgretmenEkle.aspx" />
+    <Content Include="OgrenciEkleY.aspx" />
     <Content Include="OgrenciEkle.aspx" />
     <Content Include="OgrenciGelen.aspx" />
     <Content Include="OgrenciGiden.aspx" />
@@ -513,6 +530,8 @@
     <Content Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Content>
+    <Content Include="OgretmenListesi.aspx" />
+    <Content Include="YoneticiDefault.aspx" />
     <None Include="DataSet1.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -556,6 +575,7 @@
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
+    <Content Include="Yonetici.Master" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Anasayfa.aspx.cs">
@@ -586,6 +606,13 @@
     <Compile Include="DersGuncelle.aspx.designer.cs">
       <DependentUpon>DersGuncelle.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DersListesiY.aspx.cs">
+      <DependentUpon>DersListesiY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DersListesiY.aspx.designer.cs">
+      <DependentUpon>DersListesiY.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DersListesi.aspx.cs">
       <DependentUpon>DersListesi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -600,12 +627,26 @@
     <Compile Include="DersSil.aspx.designer.cs">
       <DependentUpon>DersSil.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DuyuruEkleY.aspx.cs">
+      <DependentUpon>DuyuruEkleY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruEkleY.aspx.designer.cs">
+      <DependentUpon>DuyuruEkleY.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DuyuruEkle.aspx.cs">
       <DependentUpon>DuyuruEkle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DuyuruEkle.aspx.designer.cs">
       <DependentUpon>DuyuruEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DuyuruGuncelleY.aspx.cs">
+      <DependentUpon>DuyuruGuncelleY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruGuncelleY.aspx.designer.cs">
+      <DependentUpon>DuyuruGuncelleY.aspx</DependentUpon>
     </Compile>
     <Compile Include="DuyuruGuncelle.aspx.cs">
       <DependentUpon>DuyuruGuncelle.aspx</DependentUpon>
@@ -614,6 +655,13 @@
     <Compile Include="DuyuruGuncelle.aspx.designer.cs">
       <DependentUpon>DuyuruGuncelle.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DuyuruListesiY.aspx.cs">
+      <DependentUpon>DuyuruListesiY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruListesiY.aspx.designer.cs">
+      <DependentUpon>DuyuruListesiY.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DuyuruListesi.aspx.cs">
       <DependentUpon>DuyuruListesi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -621,12 +669,26 @@
     <Compile Include="DuyuruListesi.aspx.designer.cs">
       <DependentUpon>DuyuruListesi.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DuyuruSilY.aspx.cs">
+      <DependentUpon>DuyuruSilY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DuyuruSilY.aspx.designer.cs">
+      <DependentUpon>DuyuruSilY.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DuyuruSil.aspx.cs">
       <DependentUpon>DuyuruSil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DuyuruSil.aspx.designer.cs">
       <DependentUpon>DuyuruSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MesajlarYonetici.aspx.cs">
+      <DependentUpon>MesajlarYonetici.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MesajlarYonetici.aspx.designer.cs">
+      <DependentUpon>MesajlarYonetici.aspx</DependentUpon>
     </Compile>
     <Compile Include="GelenMesaj.aspx.cs">
       <DependentUpon>GelenMesaj.aspx</DependentUpon>
@@ -652,12 +714,26 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MesajOlusturY.aspx.cs">
+      <DependentUpon>MesajOlusturY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MesajOlusturY.aspx.designer.cs">
+      <DependentUpon>MesajOlusturY.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MesajOlustur.aspx.cs">
       <DependentUpon>MesajOlustur.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MesajOlustur.aspx.designer.cs">
       <DependentUpon>MesajOlustur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NotEkleY.aspx.cs">
+      <DependentUpon>NotEkleY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotEkleY.aspx.designer.cs">
+      <DependentUpon>NotEkleY.aspx</DependentUpon>
     </Compile>
     <Compile Include="NotEkle.aspx.cs">
       <DependentUpon>NotEkle.aspx</DependentUpon>
@@ -666,12 +742,26 @@
     <Compile Include="NotEkle.aspx.designer.cs">
       <DependentUpon>NotEkle.aspx</DependentUpon>
     </Compile>
+    <Compile Include="NotGuncelleY.aspx.cs">
+      <DependentUpon>NotGuncelleY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotGuncelleY.aspx.designer.cs">
+      <DependentUpon>NotGuncelleY.aspx</DependentUpon>
+    </Compile>
     <Compile Include="NotGuncelle.aspx.cs">
       <DependentUpon>NotGuncelle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NotGuncelle.aspx.designer.cs">
       <DependentUpon>NotGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NotListesiY.aspx.cs">
+      <DependentUpon>NotListesiY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotListesiY.aspx.designer.cs">
+      <DependentUpon>NotListesiY.aspx</DependentUpon>
     </Compile>
     <Compile Include="NotListesi.aspx.cs">
       <DependentUpon>NotListesi.aspx</DependentUpon>
@@ -707,6 +797,48 @@
     </Compile>
     <Compile Include="OgrenciDuyuru.aspx.designer.cs">
       <DependentUpon>OgrenciDuyuru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciGuncelleY.aspx.cs">
+      <DependentUpon>OgrenciGuncelleY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciGuncelleY.aspx.designer.cs">
+      <DependentUpon>OgrenciGuncelleY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciSilY.aspx.cs">
+      <DependentUpon>OgrenciSilY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciSilY.aspx.designer.cs">
+      <DependentUpon>OgrenciSilY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenGuncelle.aspx.cs">
+      <DependentUpon>OgretmenGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgretmenGuncelle.aspx.designer.cs">
+      <DependentUpon>OgretmenGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenSil.aspx.cs">
+      <DependentUpon>OgretmenSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgretmenSil.aspx.designer.cs">
+      <DependentUpon>OgretmenSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenEkle.aspx.cs">
+      <DependentUpon>OgretmenEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgretmenEkle.aspx.designer.cs">
+      <DependentUpon>OgretmenEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciEkleY.aspx.cs">
+      <DependentUpon>OgrenciEkleY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgrenciEkleY.aspx.designer.cs">
+      <DependentUpon>OgrenciEkleY.aspx</DependentUpon>
     </Compile>
     <Compile Include="OgrenciEkle.aspx.cs">
       <DependentUpon>OgrenciEkle.aspx</DependentUpon>
@@ -778,6 +910,26 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetici.Master.cs">
+      <DependentUpon>Yonetici.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Yonetici.Master.designer.cs">
+      <DependentUpon>Yonetici.Master</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenListesi.aspx.cs">
+      <DependentUpon>OgretmenListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OgretmenListesi.aspx.designer.cs">
+      <DependentUpon>OgretmenListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiDefault.aspx.cs">
+      <DependentUpon>YoneticiDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YoneticiDefault.aspx.designer.cs">
+      <DependentUpon>YoneticiDefault.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

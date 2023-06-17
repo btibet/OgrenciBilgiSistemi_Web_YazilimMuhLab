@@ -14,7 +14,7 @@ namespace WebApplication2
             Byte id = Convert.ToByte(Request.QueryString["DERSID"].ToString());
             DataSet1TableAdapters.TBL_DERSLERTableAdapter dt = new DataSet1TableAdapters.TBL_DERSLERTableAdapter();
             dt.DersSil(id);
-            Response.Redirect("DersListesi.aspx");
+            Response.Redirect("DersListesiY.aspx");
         }
     }
 }

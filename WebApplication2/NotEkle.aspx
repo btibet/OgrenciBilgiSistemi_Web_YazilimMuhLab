@@ -11,10 +11,6 @@
                 <asp:TextBox ID="TxtOgrid" runat="server" CssClass="form-control" Width="200px"></asp:TextBox>
             </div>
             <div>
-                <asp:Label for="TxtOgrAd" runat="server">ÖĞRENCİ ADI SOYADI </asp:Label>
-                <asp:TextBox ID="TxtOgrsAd" runat="server" CssClass="form-control" Width="200px"></asp:TextBox>
-            </div>
-            <div>
                 <asp:Label for="DropDownList1" runat="server">DERS</asp:Label>
                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control" Width="200px"></asp:DropDownList>
             </div>
@@ -32,6 +28,6 @@
             </div>
            
         </div>
-        <%--<asp:Button ID="Button1" runat="server"  Text="Kaydet" OnClick="Button1_Click" />--%>
+        <asp:Button ID="Button1" runat="server"  Text="Kaydet" OnClick="Button1_Click" />
     </form>
 </asp:Content>

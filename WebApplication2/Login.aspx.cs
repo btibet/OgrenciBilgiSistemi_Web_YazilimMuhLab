@@ -10,6 +10,7 @@ namespace WebApplication2
 {
     public partial class Login : System.Web.UI.Page
     {
+ 
         SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-A59ONIF\SQLEXPRESS;Initial Catalog=OBSWEB;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -52,6 +53,21 @@ namespace WebApplication2
                 TxtSifre.Text = "Hatalı şifre";
             }
             baglanti.Close();
+        }
+
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            
+            if (TxtNumara.Text == "admin" && TxtSifre.Text == "admin")
+            {
+                Session.Add("OGRNUMARA", TxtNumara.Text);
+                Response.Redirect("YoneticiDefault.aspx");
+            }
+            else
+            {
+                TxtSifre.Text = "Hatalı şifre";
+            }
         }
     }
 }

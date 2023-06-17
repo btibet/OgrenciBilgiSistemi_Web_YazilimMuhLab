@@ -18,7 +18,7 @@ namespace WebApplication2
         {
             DataSet1TableAdapters.TBL_DERSLERTableAdapter dt = new DataSet1TableAdapters.TBL_DERSLERTableAdapter();
             dt.DersEkle(TxtDersAd.Text);
-            Response.Redirect("DersListesi.aspx");
+            Response.Redirect("DersListesiY.aspx");
         }
     }
 }

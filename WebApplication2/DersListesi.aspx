@@ -7,7 +7,6 @@
         <tr>
             <th scope="col">DERS ID</th>
             <th scope="col">DERS AD</th>
-            <th scope="col">İŞLEMLER</th>
 
         </tr>
 
@@ -19,15 +18,15 @@
                         <td><%#Eval("DERSAD")%></td>
                        
 
-                        <td>
+                       <%-- <td>
                             <asp:HyperLink NavigateUrl='<%# "DersSil.aspx?DERSID="+ Eval("DERSID")%>' ID="HyperLink1"   runat="server" CssClass="btn btn-danger">SİL</asp:HyperLink>
                             <asp:HyperLink NavigateUrl='<%# "DersGuncelle.aspx?DERSID="+ Eval("DERSID")%>' ID="HyperLink2" runat="server" CssClass="btn btn-success">GÜNCELLE</asp:HyperLink>
-                        </td>
+                        </td>--%>
                     </tr>
                 </ItemTemplate>
             </asp:Repeater>
             
         </tbody>
     </table>
-     <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/DersEkle.aspx" CssClass="btn btn-info">DERS EKLE</asp:HyperLink>
+<%--     <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/DersEkle.aspx" CssClass="btn btn-info">DERS EKLE</asp:HyperLink>--%>
 </asp:Content>

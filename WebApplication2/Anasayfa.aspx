@@ -12,7 +12,6 @@
             <th scope="col">TELEFON</th>
             <th scope="col">MAİL</th>
             <th scope="col">ŞİFRE</th>
-            <th scope="col">İŞLEMLER</th>
         </tr>
 
         <tbody>
@@ -26,10 +25,10 @@
                         <td><%#Eval("OGRTEL")%></td>
                         <td><%#Eval("OGRMAIL")%></td>
                         <td><%#Eval("OGRSIFRE")%></td>
-                        <td>
-                            <asp:HyperLink ID="HyperLink1" NavigateUrl='<%#"~/OgrenciSil.aspx?OGRID="+Eval("OGRID")%>' runat="server" CssClass="btn btn-danger">SİL</asp:HyperLink>
-                            <asp:HyperLink ID="HyperLink2" NavigateUrl='<%#"~/OgrenciGuncelle.aspx?OGRID="+Eval("OGRID")%>' runat="server" CssClass="btn btn-success">GÜNCELLE</asp:HyperLink>
-                        </td>
+                        
+                           <%-- <asp:HyperLink ID="HyperLink1" NavigateUrl='<%#"~/OgrenciSil.aspx?OGRID="+Eval("OGRID")%>' runat="server" CssClass="btn btn-danger">SİL</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink2" NavigateUrl='<%#"~/OgrenciGuncelle.aspx?OGRID="+Eval("OGRID")%>' runat="server" CssClass="btn btn-success">GÜNCELLE</asp:HyperLink>--%>
+                        
                     </tr>
                 </ItemTemplate>
             </asp:Repeater>
